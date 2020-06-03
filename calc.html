@@ -1,0 +1,83 @@
+<!-- //clacultor in html using css for styling and java-script for calculation  -->
+<!-- 
+	AUTHOR: Mayank Mohak
+	DATE OF CREATION:  6/3/2020 
+-->
+<html> 
+<head> 
+	<title>CALCULATOR</title>
+	<link rel="icon" type="image/png" href="img/icon.png"> <!-- Link to icon of html page -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Link to css file -->
+	<script type="text/javascript" src="javascript/function.js"></script> <!-- Link to java script file -->
+</head> 
+<body>
+	<div id ="calculator" align="center">
+		<div class = title >SIMPLE CALCULATOR</div>
+	        <!-- Screen and clear key -->
+        <div class="top">
+        	<!-- clr() function will call clr to clear all value -->
+            <span id="clear">
+            	<input type="button" value="c" onclick="clr()"/>
+            </span>
+            <div >
+            	<input type="text" id="result"/>
+            </div>
+        </div>
+
+        <div class="keys">
+            <!-- operators and other keys here | dis() function will display result | solv() function is for calculations -->
+            <span>
+            	<input type="button" value="7" onclick="dis('7')"/>
+            </span>
+            <span>
+            	<input type="button" value="8" onclick="dis('8')"/>
+            </span>
+            <span>
+            	<input type="button" value="9" onclick="dis('9')"/>
+            </span>
+            <span class="operator">
+            	<input type="button" value="+" onclick="dis('+')"/>
+            </span>
+            <span>
+            	<input type="button" value="4" onclick="dis('4')"/>
+            </span>
+            <span>
+            	<input type="button" value="5" onclick="dis('5')"/>
+            </span>
+            <span>
+            	<input type="button" value="6" onclick="dis('6')"/>
+            </span>
+            <span class="operator">
+            	<input type="button" value="-" onclick="dis('-')"/>
+            </span>
+            <span>
+            	<input type="button" value="1" onclick="dis('1')"/>
+            </span>
+            <span>
+            	<input type="button" value="2" onclick="dis('2')"/>
+            </span>
+            <span>
+            	<input type="button" value="3" onclick="dis('3')"/>
+            </span>
+            <span class="operator">
+            	<input type="button" value="/" onclick="dis('/')"/>
+            </span>
+            <span>
+            	<input type="button" value="0" onclick="dis('0')"/>
+            </span>
+            <span>
+            	<input type="button" value="." onclick="dis('.')"/>
+            </span>
+            <span class="eval">
+            	<input type="button" value="=" onclick="solve()"/>
+            </span>
+            <span class="operator">
+            	<input type="button" value="*" onclick="dis('*')"/>
+            </span>
+        </div>
+		<br>
+		<div class = "title">Devloper: Mayank Mohak</div> 
+	</div>
+</body>
+</body>
+</html>
